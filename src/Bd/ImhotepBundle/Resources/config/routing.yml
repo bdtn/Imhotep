@@ -1,0 +1,12 @@
+bd_imhotep_homepage:
+    pattern:  /
+    defaults: { _controller: BdImhotepBundle:Imhotep:index }
+issue:
+    pattern:  /issue
+    defaults: { _controller: BdImhotepBundle:Issue:index }    
+bd_issue_new:
+    pattern:  /new
+    defaults: { _controller: BdImhotepBundle:Issue:new }
+issue_create:
+    pattern:  /create
+    defaults: { _controller: BdImhotepBundle:Issue:create }

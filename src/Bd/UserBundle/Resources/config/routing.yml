@@ -1,0 +1,3 @@
+bd_user_homepage:
+    pattern:  /
+    defaults: { _controller: BdUserBundle:Default:login }
