@@ -9,16 +9,6 @@ class ImhotepController extends Controller
     public function indexAction()
     {
         return $this->render('BdImhotepBundle:Imhotep:index.html.twig');
-        
-                    fdgfdgfdgfd
-        
-        
-        
-        
-        
-        
-        
-        
     }
 
     public function menuAction(){
