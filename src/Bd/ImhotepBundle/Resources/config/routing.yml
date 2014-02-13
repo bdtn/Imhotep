@@ -1,5 +1,5 @@
 bd_imhotep_homepage:
-    pattern:  /dashboard
+    pattern:  /
     defaults: { _controller: BdImhotepBundle:Imhotep:index }
 issue:
     pattern:  /issue
