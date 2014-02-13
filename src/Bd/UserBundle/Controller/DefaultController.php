@@ -35,4 +35,15 @@ class DefaultController extends Controller
 		  'error'         => $error,
 		));
 	}
+
+	//get all users
+	public function usersAction() {
+	    //access user manager services 
+
+	   	$userManager = $this->get('fos_user.user_manager');
+	    $users = $userManager->findUsers();
+
+
+	    return $this->render('BdUserBundle:Default:users.html.twig', array('users' =>   $users));
+	}
 }

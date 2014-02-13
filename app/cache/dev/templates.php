@@ -88,6 +88,7 @@
   'BdImhotepBundle:Issue:show.html.twig' => '/var/www/Imhotep/src/Bd/ImhotepBundle/Resources/views/Issue/show.html.twig',
   'BdUserBundle:Default:login.html.twig' => '/var/www/Imhotep/src/Bd/UserBundle/Resources/views/Default/login.html.twig',
   'BdUserBundle:Default:index.html.twig' => '/var/www/Imhotep/src/Bd/UserBundle/Resources/views/Default/index.html.twig',
+  'BdUserBundle:Default:users.html.twig' => '/var/www/Imhotep/src/Bd/UserBundle/Resources/views/Default/users.html.twig',
   'FOSUserBundle:Resetting:request_content.html.twig' => '/var/www/Imhotep/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Resetting/request_content.html.twig',
   'FOSUserBundle:Resetting:checkEmail.html.twig' => '/var/www/Imhotep/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Resetting/checkEmail.html.twig',
   'FOSUserBundle:Resetting:passwordAlreadyRequested.html.twig' => '/var/www/Imhotep/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views/Resetting/passwordAlreadyRequested.html.twig',

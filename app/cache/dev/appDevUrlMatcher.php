@@ -135,22 +135,23 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // bd_user_homepage
-        if (rtrim($pathinfo, '/') === '') {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'bd_user_homepage');
-            }
-
-            return array (  '_controller' => 'Bd\\UserBundle\\Controller\\DefaultController::loginAction',  '_route' => 'bd_user_homepage',);
-        }
-
         if (0 === strpos($pathinfo, '/imhotep')) {
-            // bd_imhotep_homepage
+            // bd_user_homepage
             if (rtrim($pathinfo, '/') === '/imhotep') {
                 if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'bd_imhotep_homepage');
+                    return $this->redirect($pathinfo.'/', 'bd_user_homepage');
                 }
 
+                return array (  '_controller' => 'Bd\\UserBundle\\Controller\\DefaultController::loginAction',  '_route' => 'bd_user_homepage',);
+            }
+
+            // bd_users_list
+            if ($pathinfo === '/imhotep/users') {
+                return array (  '_controller' => 'Bd\\UserBundle\\Controller\\DefaultController::usersAction',  '_route' => 'bd_users_list',);
+            }
+
+            // bd_imhotep_homepage
+            if ($pathinfo === '/imhotep/dashboard') {
                 return array (  '_controller' => 'Bd\\ImhotepBundle\\Controller\\ImhotepController::indexAction',  '_route' => 'bd_imhotep_homepage',);
             }
 

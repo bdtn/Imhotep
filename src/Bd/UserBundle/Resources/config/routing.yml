@@ -1,3 +1,7 @@
 bd_user_homepage:
     pattern:  /
     defaults: { _controller: BdUserBundle:Default:login }
+
+bd_users_list:
+    pattern:  /users
+    defaults: { _controller: BdUserBundle:Default:users }

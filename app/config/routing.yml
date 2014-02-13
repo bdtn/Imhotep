@@ -1,6 +1,6 @@
 bd_user:
     resource: "@BdUserBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /imhotep
 
 bd_imhotep:
     resource: "@BdImhotepBundle/Resources/config/routing.yml"
