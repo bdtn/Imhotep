@@ -5,3 +5,8 @@ services:
 #    bd_user.example:
 #        class: %bd_user.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
+    bd_user.registration.form.type:
+        class: Bd\UserBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: bd_user_registration }

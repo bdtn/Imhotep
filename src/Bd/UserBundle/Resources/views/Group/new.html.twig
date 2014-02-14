@@ -1,0 +1,24 @@
+{% extends "BdImhotepBundle::layout.html.twig" %}
+
+{% block title %}
+  Gestion des utilisateurs - {{ parent() }}
+{% endblock %}
+{% block body %}
+<div style='height:40px'></div>
+<h2>nouveau groupe</h2>
+
+
+<form action="{{ path('fos_user_group_new') }}" {{ form_enctype(form) }} method="POST" class="fos_user_group_new">
+    {{ form_widget(form) }}
+    <!--<div>
+        <input type="submit" value="{{ 'group.new.submit'|trans }}" />
+    </div>-->
+    <div class="control-group">
+    		<div class="controls">
+      			<button type="submit" class="btn">Envoyer</button>
+    		</div>
+  		</div>
+</form>
+
+
+{% endblock %}

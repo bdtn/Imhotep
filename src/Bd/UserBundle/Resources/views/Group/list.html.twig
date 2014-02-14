@@ -1,0 +1,41 @@
+{% extends "BdImhotepBundle::layout.html.twig" %}
+{% block title %}
+  Gestion des groupes - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+	<div style='height:40px'></div>
+	<h2>Liste des groupes</h2>
+
+	<div class="btn-group">
+	  	<a class="btn btn-primary" href="{{path('fos_user_group_new')}}"><i class="icon-user icon-white"></i> Ajouter un groupe</a>
+	</div>
+<div style='height:40px'></div>
+
+    <table class="table table-hover  table-bordered" >
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Groupe</th>
+          
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+      	 {% for group in groups %}
+	        <tr>
+	          <td>{{group.id}}</td>
+	          <td width="80%"><a href="{{ path('fos_user_group_show', {'groupName': group.getName()} ) }}">{{ group.getName() }}</a></td>
+	          
+	          <td>
+	          	<a class="btn" href="{{path('fos_user_group_delete', {'groupName': group.getName()})}}" alt="Supprimer" data-toggle="tooltip" title="Supprimer"><i class="icon-trash"></i></a>
+	          	<a class="btn" href="{{ path('fos_user_group_edit', {'groupName': group.getName()} ) }}" alt="Modifier" data-toggle="tooltip" title="Modifer"><i class="icon-edit"></i></a>
+	          </td>
+	        </tr>
+        {% endfor %}
+        
+      </tbody>
+    </table>
+
+
+{% endblock %}

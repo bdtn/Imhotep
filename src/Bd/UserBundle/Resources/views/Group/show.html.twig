@@ -1,0 +1,15 @@
+{% extends "BdImhotepBundle::layout.html.twig" %}
+
+{% block title %}
+  Gestion des utilisateurs - {{ parent() }}
+{% endblock %}
+{% block body %}
+<div style='height:80px'></div>
+
+<div class="alert alert-success">
+  <div class="fos_user_group_show">
+    <p>{{ 'Groupe'|trans }}: {{ group.getName() }}</p>
+</div>
+</div>
+
+{% endblock %}

@@ -46,4 +46,5 @@ class DefaultController extends Controller
 
 	    return $this->render('BdUserBundle:Default:users.html.twig', array('users' =>   $users));
 	}
+	
 }
