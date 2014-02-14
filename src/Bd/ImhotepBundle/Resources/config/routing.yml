@@ -1,5 +1,5 @@
 bd_imhotep_homepage:
-    pattern:  /dashboard
+    pattern:  /
     defaults: { _controller: BdImhotepBundle:Imhotep:index }
 issue:
     pattern:  /issue
@@ -9,4 +9,13 @@ bd_issue_new:
     defaults: { _controller: BdImhotepBundle:Issue:new }
 issue_create:
     pattern:  /create
-    defaults: { _controller: BdImhotepBundle:Issue:create }
+    defaults: { _controller: BdImhotepBundle:Issue:create }       
+bd_project_new:
+   pattern:  /addproject
+   defaults: { _controller: BdImhotepBundle:Project:new }
+project:
+   pattern:  /issue
+   defaults: { _controller: BdImhotepBundle:Project:index } 
+project_create:
+    pattern:  /createproject
+    defaults: { _controller: BdImhotepBundle:Project:create } 

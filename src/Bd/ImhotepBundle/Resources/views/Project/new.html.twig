@@ -1,0 +1,16 @@
+{% extends "BdImhotepBundle::layout.html.twig" %}
+
+
+{% block body -%}
+    <h1>Ajouter un projet</h1>
+
+    {{ form(form) }}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('project') }}">
+            Revenir à la liste des projets
+        </a>
+    </li>
+</ul>
+{% endblock %}
