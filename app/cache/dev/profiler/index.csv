@@ -1,0 +1,4 @@
+02ca3e,127.0.0.1,GET,http://imhotep.local/app_dev.php/group/list,1392392617,
+d04b89,127.0.0.1,GET,http://imhotep.local/app_dev.php/login,1392392618,
+f6fe12,127.0.0.1,POST,http://imhotep.local/app_dev.php/login_check,1392392624,
+311a28,127.0.0.1,GET,http://imhotep.local/app_dev.php/group/list,1392392624,
